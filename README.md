@@ -1,18 +1,16 @@
 # Fácil Reserva • Landing Page Oficial
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/maximartinengo185-ai/facil-reserva-landing)
+
 Landing page moderna, minimalista y responsiva diseñada para promocionar **Fácil Reserva**, la plataforma de gestión de reservas y turnos en tiempo real para negocios independientes.
 
-## 🚀 Características
-- **Mobile-First & Ultraligera**: Construida en HTML5 semántico con Tailwind CSS y Google Fonts. Sin dependencias pesadas de servidor.
-- **Enfocada en Conversión (CRO)**: Estructura probada para captación directa a WhatsApp.
-- **Mockup Dual Interactivo**: Representación esquemática sincronizada de la web de clientes y la app móvil de administración.
-- **Secciones incluidas**:
-  - Hero con propuesta de valor y mockup en vivo.
-  - ¿Cómo Funciona? (3 pasos sencillos).
-  - Rubros compatibles (Deportes, gimnasios, estética, consultorios).
-  - Beneficios clave y tabla comparativa "Antes vs Con Fácil Reserva".
-  - Acordeón interactivo de Preguntas Frecuentes (FAQ).
-  - Call to action de cierre y botón flotante permanente de WhatsApp con pulso.
+## 🚀 Despliegue en 1 Clic en Render
+Puedes desplegar esta landing page directamente en Render haciendo clic en el botón superior o entrando al siguiente enlace:
+👉 **[Desplegar en Render](https://render.com/deploy?repo=https://github.com/maximartinengo185-ai/facil-reserva-landing)**
+
+Render configurará automáticamente el Static Site gracias al archivo `render.yaml` incluido en el repositorio.
+
+---
 
 ## 📱 Configuración de WhatsApp
 Para cambiar el número de WhatsApp comercial, abre `index.html` y modifica la constante en las líneas iniciales del script:
@@ -23,10 +21,12 @@ const WHATSAPP_DEFAULT_MESSAGE = "Hola! Quiero más información sobre Fácil Re
 ```
 Todos los botones de la página se actualizan automáticamente con este número y mensaje.
 
-## 🌐 Despliegue en Render (Static Site)
-1. Conecta tu repositorio de GitHub en [dashboard.render.com](https://dashboard.render.com).
-2. Selecciona **New +** -> **Static Site**.
-3. Configuración:
-   - **Build Command**: *(dejar vacío)*
-   - **Publish Directory**: `.`
-4. ¡Listo! Render desplegará tu landing con CDN global y certificado SSL (HTTPS) gratuito.
+---
+
+## 🌐 Configuración de Dominio Propio en Render
+1. En el panel de Render del sitio, ve a **Settings** > **Custom Domains**.
+2. Añade tu dominio (por ejemplo `facilreserva.com` y `www.facilreserva.com`).
+3. En tu proveedor de DNS (Cloudflare, DonWeb, etc.):
+   - **Para subdominios / www**: Crea un registro `CNAME` apuntando a `facil-reserva.onrender.com`.
+   - **Para dominio raíz (@)**: Crea un registro `ALIAS` o `A` con la IP indicada por Render.
+4. Render generará automáticamente el certificado SSL (HTTPS) de forma gratuita.
