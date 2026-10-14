@@ -1,8 +1,7 @@
 services:
-  - type: static
+  - type: web
     name: facil-reserva
-    env: static
-    buildCommand: ""
+    runtime: static
     staticPublishPath: .
     routes:
       - type: rewrite
