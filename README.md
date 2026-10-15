@@ -16,7 +16,7 @@ Render configurará automáticamente el Static Site gracias al archivo `render.y
 Para cambiar el número de WhatsApp comercial, abre `index.html` y modifica la constante en las líneas iniciales del script:
 
 ```javascript
-const WHATSAPP_PHONE = "5491123456789"; // Código de país + código de área + número
+const WHATSAPP_PHONE = "5493516514995"; // Código de país + código de área + número
 const WHATSAPP_DEFAULT_MESSAGE = "Hola! Quiero más información sobre Fácil Reserva";
 ```
 Todos los botones de la página se actualizan automáticamente con este número y mensaje.
